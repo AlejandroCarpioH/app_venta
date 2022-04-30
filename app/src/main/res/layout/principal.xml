@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".principal">
+
+    <Button
+        android:id="@+id/agrega_venta"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="agrega_venta"
+        android:text="Agregar Venta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/consulta_venta"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="consulta_venta"
+        android:text="Consulta Venta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/agrega_venta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/consulta_producto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="consulta_edita"
+        android:text="consultar o edita producto / cliente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agrega_venta"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/agrega_edita_producto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="agrega_edita_producto"
+        android:text="agrega  producto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consulta_producto"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/comision"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="ver comision"
+        android:onClick="ver_comision"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/agrega_edita_producto"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agrega_cliente"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/btn_agrega_cliente"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="Agrega_cliente"
+        android:text="Agrega cliente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/consulta_producto"
+        app:layout_constraintTop_toBottomOf="@+id/consulta_venta"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Agrega producto sin iva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agrega_edita_producto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

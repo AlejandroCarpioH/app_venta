@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_app_comision">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".listaProducto"></activity>
+        <activity
+            android:name=".Lista_usuarios"
+            android:theme="@style/Theme.AppCompat.mitema" />
+
+        <activity android:name=".consulta_venta" />
+        <activity android:name=".consulta_edita_producto_cliente" />
+        <activity android:name=".compartir_ventas" />
+        <activity android:name=".Comision" />
+        <activity android:name=".agrega_venta" />
+        <activity android:name=".agrega_producto" />
+        <activity android:name=".Agrega_cliente" />
+        <activity android:name=".principal"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
