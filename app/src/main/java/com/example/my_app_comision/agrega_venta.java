@@ -56,9 +56,7 @@ public class agrega_venta extends AppCompatActivity {
         boton_limpiar = findViewById(R.id.boton_refresh);
 
         boton_limpiar.setOnClickListener((v)->{
-            Intent intent = new Intent(this,agrega_venta.class);
-            startActivity(intent);
-            finish();
+            nuevo_intent();
         });
 
 
@@ -83,6 +81,12 @@ public class agrega_venta extends AppCompatActivity {
 
 
 
+    }
+
+    public void nuevo_intent(){
+        Intent intent = new Intent(this,agrega_venta.class);
+        startActivity(intent);
+        finish();
     }
 
     public void onBackPressed(){
@@ -274,16 +278,18 @@ public class agrega_venta extends AppCompatActivity {
 
             if (id > 0) {
                 Toast.makeText(this, "Venta ingresada corrctamente", Toast.LENGTH_SHORT).show();
+                nuevo_intent();
 
-                System.out.println("cantidad de filas " + tabla.getChildCount());
-                int cantidad = tabla.getChildCount();
-                for (int i_ = 1; i_ < cantidad; i_++) {
-                    tabla.removeViewAt(1);
-                }
 
-                fila();
-                tb.volviendo_enumerar();
-                id = 0;
+//                System.out.println("cantidad de filas " + tabla.getChildCount());
+//                int cantidad = tabla.getChildCount();
+//                for (int i_ = 1; i_ < cantidad; i_++) {
+//                    tabla.removeViewAt(1);
+//                }
+//
+//                fila();
+//                tb.volviendo_enumerar();
+//                id = 0;
             } else {
                 Toast.makeText(this, "La venta no se ingreso", Toast.LENGTH_SHORT).show();
             }

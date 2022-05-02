@@ -9,20 +9,18 @@
     <Button
         android:id="@+id/button7"
         android:layout_width="249dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:onClick="ir_a_ventana_compartir"
         android:layout_marginStart="106dp"
         android:layout_marginLeft="106dp"
-        android:layout_marginTop="661dp"
+        android:layout_marginTop="710dp"
         android:layout_marginEnd="108dp"
         android:layout_marginRight="108dp"
-        android:layout_marginBottom="22dp"
+        android:onClick="ir_a_ventana_compartir"
         android:text="Compartir venta" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -189,11 +187,11 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="371dp"
+        android:layout_height="419dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="278dp"
-        android:layout_marginBottom="82dp"
+        android:layout_marginBottom="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
